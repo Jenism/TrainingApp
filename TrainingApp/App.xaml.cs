@@ -29,10 +29,7 @@ namespace TrainingApp
 
     protected override void RegisterTypes(IContainerRegistry containerRegistry)
     {
-      containerRegistry.Register<object, PlansView>(Constants.RegionNames.Plans);
-      containerRegistry.Register<object, UcExcercises>(Constants.RegionNames.Excercises);
-      containerRegistry.RegisterSingleton<MainVM>();
-      containerRegistry.RegisterSingleton<IAppRegionManager, AppRegionManager>();
+      TrainingAppBootstrapper.RegisterTypes(containerRegistry);
     }
   }
 }

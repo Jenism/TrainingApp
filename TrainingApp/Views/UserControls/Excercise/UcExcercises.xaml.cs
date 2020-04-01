@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TrainingApp.ViewModels.Main;
 
 namespace TrainingApp.Views.UserControls.Excercise
 {
@@ -18,8 +19,9 @@ namespace TrainingApp.Views.UserControls.Excercise
   /// </summary>
   public partial class UcExcercises : UserControl
   {
-    public UcExcercises()
+    public UcExcercises(ExcercisesVM excercisesVM)
     {
+      DataContext = excercisesVM;
       InitializeComponent();
     }
   }

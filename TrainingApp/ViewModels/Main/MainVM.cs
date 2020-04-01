@@ -26,20 +26,6 @@ namespace TrainingApp.ViewModels.Main
       }
     }
 
-    private ExcercisesVM excercises = new ExcercisesVM();
-    public ExcercisesVM Excercises
-    {
-      get { return excercises; }
-      set
-      {
-        if (excercises != value)
-        {
-          excercises = value;
-          RaisePropertyChanged();
-        }
-      }
-    }
-
     public MainVM(IAppRegionManager appRegionManager)
     {
       this.appRegionManager = appRegionManager;
